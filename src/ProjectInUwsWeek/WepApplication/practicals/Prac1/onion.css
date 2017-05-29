@@ -1,0 +1,105 @@
+﻿/**
+ * Student ID: 18051230
+ * Student Name: BAO DUY NGUYEN
+ *  Tutor’s Name: Luke  Bozzetto
+ */
+body {
+    background-color: white;
+    font-family:Arial;
+    font-size:100%;
+    color:black;
+    margin-left:50px;
+    margin-bottom:50px;
+    margin-right:50px;
+    margin-top:50px;
+}
+h1{
+    list-style:georgian;
+    font-size:180%;
+}
+h2{
+    list-style:georgian;
+    font-size:120%;
+    color:darkslateblue;
+}
+footer{
+    font-size:50%;
+    background-color:lightgray;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:10px;
+}
+article{
+    border-top:1px;
+    color:darkslateblue;
+    text-align:justify;
+}
+
+a:link {
+    color: darkslateblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: darkblue;
+    background-color: lightgray;
+    text-decoration: underline;
+}
+a:active {
+    color: brown;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.salAndOil{
+    height:135px;
+    width:240px;
+    float:left;
+    padding-right:15px;
+    padding-bottom:10px;
+    padding-left:10px;
+}
+.scientists{
+    height:147px;
+    width:243px;
+    float:left;
+    padding-right:15px;  
+    padding-bottom:10px;
+    padding-left:10px;
+}
+figure{
+    font-style:italic;
+}
+.p5{
+    background-color:grey;
+    text-align:center;
+}
+.machine{
+    height:385px;
+    width:365px;
+    float:right;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:15px;
+}
+.n1{
+    background-color:gray;
+    text-decoration: underline;
+    word-spacing: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.p3 {
+    color:cornflowerblue;
+}
+.p4 {
+    background-color: dimgrey;
+}

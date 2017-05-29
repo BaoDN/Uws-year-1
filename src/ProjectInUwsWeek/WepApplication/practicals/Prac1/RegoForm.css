@@ -1,0 +1,129 @@
+﻿/**
+ * Student ID: 18051230
+ * Student Name: BAO DUY NGUYEN
+ *  Tutor’s Name: Luke  Bozzetto
+ */
+body {
+    background-color: white;
+    font-family:Arial;
+    
+    font-size:0.9em;
+    color:black;
+    margin-left:15px;
+    margin-bottom:20px;
+    margin-right:15px;
+    margin-top:20px;
+}div.container {
+    width: 100%;
+    border: 1px solid gray;
+    border:none
+}
+ h1, h2, h3{
+     font-weight:400;
+     color: #6495ED;
+ }
+ label{
+    
+    
+ }
+ input:focus {
+     background-color:#F0F8FF;
+     color:#6495ED;
+     border:1px solid #6495ED;       
+}
+ .error-messages {
+    display:none;
+    color:blue;
+    border:1px solid #7f0303;
+    background-color:lightblue;
+    padding:1px;
+    border-radius:3px;
+    width:150px;
+    margin-left:10px;
+}
+#submit{
+    margin-left:6px;
+    margin-top:2px;
+
+}
+ header, footer {
+    padding: 1em;
+    color: black;
+    background-color: gray;
+    clear: left;
+    text-align: center;
+    float:none;
+}
+ .p1{
+     border:groove;
+     margin-top:2px;
+     padding-top:2px;
+     float:none;
+     
+ }
+  .bd{
+     border:none;
+     margin-top:2px;
+     padding-top:2px;
+     /*float:none;*/
+     width:100%;
+    
+ }
+ .cl{
+      border:groove;
+     /*margin-top:2px;
+     padding-top:2px;*/
+     width:49.5%;
+     float:left;
+     display: inline-block;
+     height:100%;
+ }
+  .cr{
+      border:groove;
+     width:49.5%;
+     float:right;
+     display: inline-block;
+     
+
+ }
+  .ft{
+      border:none;
+      display: inline-block;
+      text-align:center;
+      background-color:white;
+      width:100%;
+      
+      
+  }
+  .hder{
+      margin:auto;
+      padding: 4px;
+      background-color:grey;
+      border-bottom:groove;
+      border-top:groove;
+      border-top-color:black;
+      border-bottom-color:black;
+  
+  }
+  .l1{
+      margin:auto;
+      padding:4px;
+      border-top:groove;
+  }
+.p3{
+    border-bottom-color:grey;
+    border-bottom:groove;
+}
+ #logo{
+     float:left;
+     max-width: 70%;
+    margin: 0;
+    padding: 1em;
+ }
+ .s1{
+     margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+ }
+
+ 

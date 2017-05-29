@@ -1,0 +1,285 @@
+﻿<!--
+/**
+ * Student ID: 18051230
+ * Student Name: BAO DUY NGUYEN
+ *  Tutor’s Name: Luke  Bozzetto
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Science and Technology</title>
+    <link rel="stylesheet" type="text/css" href="RegoForm.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="p5">PATIENT REGISTRATION FORM</h1>
+        </header>
+        
+        <div class="p1">
+            <img id="logo" src="../../images/logo.png" alt="logo" />
+            <section class="s1">
+                <h2>
+                    Echuca Regional Health.<br />
+                    Admission Office.
+                </h2>
+                <h3>
+                    P.O. Box 25, Echuca. Victoria. 3564.
+                    <br />
+                    <strong>BEFORE YOUR ADMISSION TO HOSPITAL</strong>
+                </h3>
+                <h3>Please complete this form and post/deliver it to the Admission Office.</h3>
+            </section>
+        </div>
+        <div class="bd">
+            <form name="registrationForm" action="" onsubmit="return validateForm()" method="post">
+                <div class="cl">
+                    <p class="hder">Person Details (Patient)</p>
+                    <div class="" name="personalDetails">
+                        <label for="title">Title: </label>
+                        <label for="mr">Mr</label>
+                        <input type="radio" name="title" required value="Mr" id="mr">
+                        <label for="mrs">Mrs</label>
+                        <input type="radio" name="title" value="Mrs" id="mrs">
+                        <label for="miss">Miss</label>
+                        <input type="radio" name="title" value="Miss" id="miss">
+                        <label for="ms">Ms</label>
+                        <input type="radio" name="title" value="Ms" id="ms">
+                        <label for="Other">Other</label>
+                        <input type="text" name="title" />
+                    </div>
+                    <div class="l1">
+                        <label for="surName">Surname:</label>
+                        <input type="text" name="surName" />
+                    </div>
+                    <div class="l1">
+                        <label for="givenName">Given Name(s) is Full:</label>
+                        <input type="text" name="givenName" />
+                    </div>
+                    <div class="l1">
+                        <label for="previousSurname">Previous Surname(s):</label>
+                        <input type="text" name="previousSurname" />
+                    </div>
+                    <div class="l1">
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" />
+                    </div>
+                    <div class="l1">
+                        <label for="sex">Sex:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" required value="Male" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex" required value="Female" id="female">
+                    </div>
+                    <div class="l1">
+                        <label for="country">Country of Birth:</label>
+                        <input type="text" name="country" />
+                        <label for="state">If Australia. what Sate:</label>
+                        <input type="text" name="state" />
+                    </div>
+                    <div class="l1">
+                        <label for="status">Marital Status:</label>
+                        <label for="married">Married</label>
+                        <input type="radio" name="status" required value="Married" id="married">
+                        <label for="single">Single</label>
+                        <input type="radio" name="status" required value="Single" id="single">
+                        <label for="widowed">Widowed</label>
+                        <input type="radio" name="status" required value="Widowed" id="widowed"><br />
+                        <label for="separated">Separated</label>
+                        <input type="radio" name="status" required value="Separated" id="separated">
+                        <label for="deFacto">De Facto</label>
+                        <input type="radio" name="status" required value="DeFacto" id="deFacto">
+                        <label for="divorced">Divorced</label>
+                        <input type="radio" name="status" required value="Divorced" id="divorced">
+                    </div>
+                    <div class="l1">
+                        <label for="churchRepresentative">
+                            Do you wish to be visited
+                            by a Church Representative:
+                        </label>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="churchRepresentative" required value="Yes" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="churchRepresentative" required value="No" id="no">
+                        <br />
+                        <label for="religion">Religion:</label>
+                        <input type="text" name="religion" />
+                    </div>
+                    <div class="l1">
+                        <label for="aboriginalTorresStraitIslander">
+                            Aboriginal / Torres Strait Islander:
+                        </label>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="aboriginalTorresStraitIslander" required value="AboriginalIslander" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="aboriginalTorresStraitIslander" required value="NotAboriginalIslander" id="no">
+                    </div>
+                    <div class="l1">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" /> <br />
+                        <label for="postCode">Postcode:</label>
+                        <input type="number" /><br />
+                        <label for="phoneAh">Phone No. (AH)</label>
+                        <input type="text" name="phoneAh" />
+                        <label for="phoneBh">(BH)</label>
+                        <input type="text" name="phoneBh" />
+                    </div>
+                    <p class="hder">Next of Kin / Contact Person.</p>
+                    <div name="contactPerson">
+                        <div class="l1">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" /> <br />
+                            <label for="address">Address:</label>
+                            <input type="text" name="address" /> <br />
+                            <label for="phoneAh">Phone No. (AH)</label>
+                            <input type="text" name="phoneAh" />
+                            <label for="phoneBh">(BH)</label>
+                            <input type="text" name="phoneBh" /><br />
+                            <label for="relationship">Relationship to Patient:</label>
+                            <input type="text" name="relationship" />
+                        </div>
+                        <div class="l1">
+                            <label for="medicareNo">Medicare No:</label>
+                            <input type="number" name="medicareNo" /><br />
+                            <label for="cardIdNo">Card I.D. No:</label>
+                            <input type="number" name="cardIdNo" />
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="date" name="expiryDate" />
+                        </div>
+                    </div>
+                    <p class="hder">Other Details.</p>
+                    <div name="otherDetails">
+                        <div class="l1">
+                            <label for="nameofyourGP">Name of your G.P.:</label>
+                            <input type="text" name="nameofyourGP" />
+                        </div>
+                        <div class="l1">
+                            <label for="patientinHere">
+                                Have you been a patient in this Hospital or had<br />
+                                pathology/Xrays done here.
+                            </label>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="patientinHere" required value="Yes" id="yes">
+                            <label for="no">No</label>
+                            <input type="radio" name="patientinHere" required value="No" id="no">
+                        </div>
+                        <div class="l1">
+                            <label for="privateHealthInsurance">Do you have Private Health Insurance.</label>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="privateHealthInsurance" required value="Yes" id="yes">
+                            <label for="no">No</label>
+                            <input type="radio" name="privateHealthInsurance" required value="No" id="no">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cr">
+                    <p class="hder">Health Insurance Details</p>
+                    <div class="" name="personalDetails">
+                        <div class="l1">
+                            <label for="nameFund">Name of Fund:</label>
+                            <input type="text" name="nameFund" />
+                        </div>
+                        <div class="l1">
+                            <label for="membershipNo">Membership No:</label>
+                            <input type="number" name="membershipNo" />
+                        </div>
+                        <div class="l1">
+                            <label for="levelofInsurance">Level of Insurance:</label>
+                            <label for="top">Top</label>
+                            <input type="radio" name="levelofInsurance" required value="Top" id="top">
+                            <label for="intermediate">Intermediate</label>
+                            <input type="radio" name="levelofInsurance" required value="Intermediate" id="intermediate">
+                            <label for="basic">Basic</label>
+                            <input type="radio" name="levelofInsurance" required value="Basic" id="basic">
+                            <label for="extrasOnly">Extras Only</label>
+                            <input type="radio" name="levelofInsurance" required value="Extras" id="extrasOnly">
+                        </div>
+                        <div class="l1">
+                            <label for="excessApply">Does an Excess Apply:</label>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="excessApply" required value="Yes" id="yes">
+                            <label for="no">No</label>
+                            <input type="radio" name="excessApply" required value="No" id="no">
+                            <label for="amount">Excess Amount $</label>
+                            <input type="number" name="amount" />
+                        </div>
+                    </div>
+                    <p class="hder">WorkCare / TAC / Workers Comp.</p>
+                    <div class="" name="workCareTacWorker">
+                        <div class="l1">
+                            <p>
+                                Approval must be obtained prior to admission.<br />
+                                Correspondence verifying liability must be presented on
+                                admission
+                            </p>
+                        </div>
+                        <div class="l1">
+                            <label for="dateAccident">Date of Injury / Accident:</label>
+                            <input type="date" name="dateAccident" />
+                        </div>
+                        <div class="l1">
+                            <label for="phoneNoWork">Phone No:</label>
+                            <input type="text" name="phoneNoWork" />
+                        </div>
+                        <div class="l1">
+                            <label for="insuranceCompany">Insurance Company:</label>
+                            <input type="text" name="insuranceCompany" />
+                        </div>
+                        <div class="l1">
+                            <label for="claimNo">Claim No:</label>
+                            <input type="number" name="claimNo" />
+                        </div>
+                        <div class="l1">
+                            <label for="solicitor">Your Solicitor:</label>
+                            <input type="text" name="solicitor" />
+                        </div>
+                        <div class="l1">
+                            <label for="addressSolicitor">Address:</label>
+                            <input type="text" name="addressSolicitor" />
+                        </div>
+                        <div class="l1">
+                            <label for="phoneNoSolicitor">Phone No:</label>
+                            <input type="text" name="phoneNoSolicitor" />
+                        </div>
+                        <div class="l1">
+                           <p>
+                               If WorkCare / Workers Comp.
+                           </p>
+                        </div>
+                       
+                        <div class="l1">
+                            <label for="employer">Employer:</label>
+                            <input type="text" name="employer" /><br /><br />
+                            <label for="addressEmployer">Address:</label>
+                            <input type="text" name="addressEmployer" />
+                            <br /><br /><br />
+                        </div>                        
+                    </div>
+                
+                    <div class="l1">
+                        <strong>Private Insurance</strong><br />
+                        <p>
+                            If you elect to be a private patient, the Hospital will claim<br />
+                            bed fees on your behalf. Please bring your membership<br />
+                            book at time of admission.
+                        </p>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+        <div class="ft">
+            <p>
+                The information you provide on this form does not oblige you to elect whether you are treated as a public or private patient until you are admitted.<br />
+                <strong>Contact your Health Fund if you have any queries about your coverage AND please read the notes on the back of this form.</strong>
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>

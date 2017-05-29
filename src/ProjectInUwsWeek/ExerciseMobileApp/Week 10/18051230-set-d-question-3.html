@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "http://tmaserv.scem.uws.edu.au/fruit.json", true);
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var result = xmlhttp.responseText;
+
+                    if (typeof (Storage) !== "undefined") {
+                        localStorage.setItem("result", result);
+                    }
+                    else {
+                        alert("Storage is not supported by this browser.");
+                    }
+
+                }
+            }
+            xmlhttp.send();
+        }
+
+        function readXML() {
+            var value, h, p, name, description, section, result1;
+            value = localStorage.getItem("result");
+            result1 = JSON.parse(value);
+
+            for (i = 0 ; i < result1.length ; i++) {
+                section = document.querySelector("section");
+
+                 h = document.createElement("h1");
+                 name = document.createTextNode(result1[i].name);
+
+                p = document.createElement("p");
+                description = document.createTextNode(result1[i].description);
+
+                h.appendChild(name);
+                p.appendChild(description);
+                section.appendChild(h);
+                section.appendChild(p);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <br />
+    <nav>
+        <button onclick="readXML();">Display</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

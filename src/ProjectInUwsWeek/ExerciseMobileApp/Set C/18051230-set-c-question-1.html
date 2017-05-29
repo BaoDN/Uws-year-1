@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+            var x = document.querySelector("p:nth-child(2)");
+            var x1 = document.querySelector("section");
+            x1.removeChild(x);
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

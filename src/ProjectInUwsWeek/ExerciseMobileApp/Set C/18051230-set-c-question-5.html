@@ -1,0 +1,28 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+            var firstChild = document.querySelector("p");
+            var x3 = document.querySelector("section");
+            var secondchild = x3.getElementsByTagName('p')[1];   
+            var thirdchild = x3.getElementsByTagName('p')[2];
+            var clone = secondchild.cloneNode(true);
+            x3.insertBefore(clone, thirdchild);
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

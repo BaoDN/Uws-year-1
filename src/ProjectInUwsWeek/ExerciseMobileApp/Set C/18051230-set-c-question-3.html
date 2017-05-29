@@ -1,0 +1,27 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+            var t = document.createElement("p");
+            var temp = document.createTextNode("This is the new text");
+            var firstChild = document.querySelector("p");
+            var x3 = document.querySelector("section");
+            x3.replaceChild(temp, firstChild);
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

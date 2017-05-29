@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Starting Point</title>
+        <script>
+			    function mymap()
+			    {
+			        var myCenter = new google.maps.LatLng(-33.905760, 151.202448);
+			        var mapProp = { center: myCenter, zoom: 11};
+			        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+			        var locations = [
+                        ['Bondi Beach', -33.890542, 151.274856],
+                        ['Coogee Beach', -33.923036, 151.259052],
+                        ['Maroubra Beach', -33.950198, 151.259302]
+			        ];
+			        var marker, i;
+
+			        for (i = 0; i < locations.length; i++) {  
+			            marker = new google.maps.Marker({
+			                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			                map: map
+			            });
+			        }
+
+			        marker.setMap(map);
+			   }
+        </script>
+    </head>
+
+    <body>
+        <h1>Google Maps</h1>
+        <div id="googleMap" style="width:400px;height:400px;"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7iDp_-paH380yiOvSpvn9waMucvs96cE&callback=mymap"></script>
+    </body>
+
+</html>

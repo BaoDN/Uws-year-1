@@ -1,0 +1,103 @@
+﻿/**
+ * Student ID: 18051230
+ * Student Name: BAO DUY NGUYEN
+ *  Tutor’s Name: Luke  Bozzetto
+ */
+body {
+    background-color: white;
+    font-family:Arial;
+    font-size:100%;
+    color:black;
+    margin-left:50px;
+    margin-bottom:50px;
+    margin-right:50px;
+    margin-top:50px;
+}div.container {
+    width: 100%;
+    border: 1px solid gray;
+    border:none
+}
+
+ header, footer {
+    padding: 1em;
+    color: black;
+    background-color: gray;
+    clear: left;
+    text-align: center;
+    float:none;
+}
+ .p1{
+     border:groove;
+     margin-top:2px;
+     padding-top:2px;
+     float:none;
+     
+ }
+  .bd{
+     border:none;
+     margin-top:2px;
+     padding-top:2px;
+     /*float:none;*/
+     width:100%;
+    
+ }
+ .cl{
+      border:groove;
+     /*margin-top:2px;
+     padding-top:2px;*/
+     
+     width:49.5%;
+     float:left;
+     display: inline-block;
+     height:100%;
+ }
+  .cr{
+      border:groove;
+  
+     width:49.5%;
+     float:right;
+     display: inline-block;
+     
+
+ }
+  .ft{
+      border:none;
+      display: inline-block;
+      text-align:center;
+      background-color:white;
+      width:100%;
+      
+      
+  }
+  .hder{
+      margin:auto;
+      padding: 4px;
+      background-color:grey;
+      border-bottom:groove;
+      border-top:groove;
+      border-top-color:black;
+      border-bottom-color:black;
+  
+  }
+  .l1{
+      margin:auto;
+      padding:4px;
+      border-top:groove;
+  }
+.p3{
+    border-bottom-color:grey;
+    border-bottom:groove;
+}
+ #logo{
+     float:left;
+     max-width: 70%;
+    margin: 0;
+    padding: 1em;
+ }
+ .s1{
+     margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+ }
+
+ 

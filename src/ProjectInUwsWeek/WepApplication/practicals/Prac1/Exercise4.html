@@ -1,0 +1,311 @@
+﻿
+<!--
+/**
+ * Student ID: 18051230
+ * Student Name: BAO DUY NGUYEN
+ *  Tutor’s Name: Luke  Bozzetto
+ */
+-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Science and Technology</title>
+    <link rel="stylesheet" type="text/css" href="RegoForm.css" />
+    <script src="formValidation.js" type="text/javascript" defer ></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="p5">PATIENT REGISTRATION FORM</h1>
+        </header>
+
+        <div class="p1">
+            <img id="logo" src="../../images/logo.png" alt="logo" />
+            <section class="s1">
+                <h2>
+                    Echuca Regional Health.<br />
+                    Admission Office.
+                </h2>
+                <h3>
+                    P.O. Box 25, Echuca. Victoria. 3564.
+                    <br />
+                    <strong>BEFORE YOUR ADMISSION TO HOSPITAL</strong>
+                </h3>
+                <h3>Please complete this form and post/deliver it to the Admission Office.</h3>
+            </section>
+        </div>
+        <div class="bd">
+            <form method="get" onsubmit="return validateForm(this);">
+            
+                <div class="cl">
+                    <p class="hder">Person Details (Patient)</p>
+                    <div>
+                        <label for="title" id="title-label">Title: </label>
+                        <label for="mr">Mr</label>
+                        <input type="checkbox" name="title" value="Mr" id="mr" title="Title is required">
+                        <label for="mrs">Mrs</label>
+                        <input type="checkbox" name="title" value="Mrs" id="mrs">
+                        <label for="miss">Miss</label>
+                        <input type="checkbox" name="title" value="Miss" id="miss">
+                        <label for="ms">Ms</label>
+                        <input type="checkbox" name="title" value="Ms" id="ms">
+                        <label for="Other">Other</label>
+                        <input type="text" name="title" />                        
+                    </div>
+                    <div class="l1">
+                        <label for="surName">Surname:</label>
+                        <input type="text" name="surName" id="surName" >
+                        <span class="error-messages" id="surName-error">SurName is required</span>
+                        <span class="error-messages" id="surName1-error">maximum of 40 characters</span>
+                        <span class="error-messages" id="surName2-error">Only letter character</span>
+                    </div>
+                    <div class="l1">
+                        <label for="givenName">Given Name(s) is Full:</label>
+                        <input type="text" name="givenName" id="givenName" />
+                        <span class="error-messages" id="givenName-error">SurName is required</span>
+                        <span class="error-messages" id="givenName1-error">maximum of 40 characters</span>
+                        <span class="error-messages" id="givenName2-error">Only letter character</span>
+                    </div>
+                    <div class="l1">
+                        <label for="previousSurname">Previous Surname(s):</label>
+                        <input type="text" name="previousSurname" id="previousSurname" />
+                    </div>
+                    <div class="l1">
+                        <label for="DOB">Date of Birth(dd/mm/yyyy):</label>
+                        <input type="date" name="DOB" id="DOB" />
+                        <span class="error-messages" id="DOB-error">Date of Birth is required</span>
+                       
+                    </div>
+                    <div class="l1">
+                        <label for="sex">Sex:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex"  value="Male" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex"  value="Female" id="female">
+                    </div>
+                    <div class="l1">
+                        <label for="country">Country of Birth:</label>
+                        <input type="text" name="country" />
+                        <label for="state">If Australia. what Sate:</label>
+                        <input type="text" name="state" />
+                        <span class="error-messages" id="country-error">Country is required</span>
+                        <span class="error-messages" id="state-error">State is required if the Country is Australia</span>
+                    </div>
+                    <div class="l1">
+                        <label for="status">Marital Status:</label>
+                        <label for="married">Married</label>
+                        <input type="radio" name="status"  value="Married" id="married">
+                        <label for="single">Single</label>
+                        <input type="radio" name="status"  value="Single" id="single">
+                        <label for="widowed">Widowed</label>
+                        <input type="radio" name="status"  value="Widowed" id="widowed"><br />
+                        <label for="separated">Separated</label>
+                        <input type="radio" name="status"  value="Separated" id="separated">
+                        <label for="deFacto">De Facto</label>
+                        <input type="radio" name="status"  value="DeFacto" id="deFacto">
+                        <label for="divorced">Divorced</label>
+                        <input type="radio" name="status"  value="Divorced" id="divorced">
+                    </div>
+                    <div class="l1">
+                        <label for="churchRepresentative">
+                            Do you wish to be visited
+                            by a Church Representative:
+                        </label>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="churchRepresentative"  value="Yes" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="churchRepresentative"  value="No" id="no">
+                        <br />
+                        <label for="religion">Religion:</label>
+                        <input type="text" name="religion" />
+                    </div>
+                    <div class="l1">
+                        <label for="aboriginalTorresStraitIslander">
+                            Aboriginal / Torres Strait Islander:
+                        </label>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="aboriginalTorresStraitIslander"  value="AboriginalIslander" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="aboriginalTorresStraitIslander"  value="NotAboriginalIslander" id="no">
+                    </div>
+                    <div class="l1">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address"/> <br />
+                        <span class="error-messages" id="address-error">Address is required</span>
+                        <label for="postCode" >Postcode:</label>
+                        <input type="text" name="postCode" id="postCode"/>
+                        <span class="error-messages" id="postCode-error">PostCode is required</span><br />
+                        <span class="error-messages" id="postCode1-error">4 number Postcode</span><br />
+                        <span class="error-messages" id="postCode2-error">input number</span><br />
+                        <label for="phoneAhPerson">Phone No. (AH)</label>
+                        <input type="text" name="phoneAhPerson" id="phoneAhPerson"/>
+                        <span class="error-messages" id="phoneAhPerson-error">10 number Phone (AH)</span><br />
+                        <span class="error-messages" id="phoneAhPerson1-error">input number</span><br />
+                        <label for="phoneBhPerson">(BH)</label>
+                        <input type="text" name="phoneBhPerson" id="phoneBhPerson" />
+                        <span class="error-messages" id="phoneBhPerson-error">10 number Phone (BH)</span><br />
+                        <span class="error-messages" id="phoneBhPerson1-error">input number</span><br />
+                        <span class="error-messages" id="phonePerson-error">At least, 1 phone number required</span>
+                    </div>
+                    <p class="hder">Next of Kin / Contact Person.</p>
+                    <div name="contactPerson">
+                        <div class="l1">
+                            <label for="nameKin">Name:</label>
+                            <input type="text" name="nameKin" /> <br />
+                            <label for="addressKin">Address:</label>
+                            <input type="text" name="addressKin" /> <br />
+                            <label for="phoneAhKin">Phone No. (AH)</label>
+                            <input type="text" name="phoneAhKin" />
+                            <label for="phoneBhKin">(BH)</label>
+                            <input type="text" name="phoneBhKin" /><br />
+                            <label for="relationship">Relationship to Patient:</label>
+                            <input type="text" name="relationship" />
+                        </div>
+                        <div class="l1">
+                            <label for="medicareNo">Medicare No:</label>
+                            <input type="text" name="medicareNo" id="medicareNo" pattern="[0-9]{10}"  title="must be 10 digit number"/><br />
+                            <span class="error-messages" id="medicareNo-error">Medicare is required</span>
+                            <label for="cardIdNo">Card I.D. No:</label>
+                            <input type="number" name="cardIdNo" id="cardIdNo" min="1" max="20" />
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="month" name="expiryDate" />
+                        </div>
+                    </div>
+                    <p class="hder">Other Details.</p>
+                    <div name="otherDetails">
+                        <div class="l1">
+                            <label for="nameofyourGP">Name of your G.P.:</label>
+                            <input type="text" name="nameofyourGP" />
+                        </div>
+                        <div class="l1">
+                            <label for="patientinHere">
+                                Have you been a patient in this Hospital or had<br />
+                                pathology/Xrays done here.
+                            </label>
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" name="patientinHere"   id="yesPH">
+                            <label for="no">No</label>
+                            <input type="checkbox" name="patientinHere"  id="noPH">
+                        </div>
+                        <div class="l1">
+                            <label for="privateHealthInsurance">Do you have Private Health Insurance.</label>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="privateHealthInsurance"  value="Yes" id="yesPHI">
+                            <label for="no">No</label>
+                            <input type="radio" name="privateHealthInsurance" value="No" id="noPHI">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cr">
+                    <p class="hder">Health Insurance Details</p><span class="error-messages" id="PHI-error">All Field in Health Insurance Details is required</span>
+                    <div class="" name="personalDetails">
+                        <div class="l1">
+                            <label for="nameFund">Name of Fund:</label>
+                            <input type="text" name="nameFund" id="nameFund" />
+                        </div>
+                        <div class="l1">
+                            <label for="membershipNo">Membership No:</label>
+                            <input type="number" name="membershipNo" id="membershipNo" />
+                        </div>
+                        <div class="l1">
+                            <label for="levelofInsurance">Level of Insurance:</label>
+                            <label for="top">Top</label>
+                            <input type="radio" name="levelofInsurance"  value="Top" id="top">
+                            <label for="intermediate">Intermediate</label>
+                            <input type="radio" name="levelofInsurance"  value="Intermediate" id="intermediate">
+                            <label for="basic">Basic</label>
+                            <input type="radio" name="levelofInsurance"  value="Basic" id="basic">
+                            <label for="extrasOnly">Extras Only</label>
+                            <input type="radio" name="levelofInsurance"  value="Extras" id="extrasOnly">
+                        </div>
+                        <div class="l1">
+                            <label for="excessApply">Does an Excess Apply:</label>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="excessApply"  value="Yes" id="yesE">
+                            <label for="no">No</label>
+                            <input type="radio" name="excessApply"  value="No" id="noE">
+                            <label for="amount">Excess Amount $</label>
+                            <input type="number" name="excessApply" id="amount" />
+                        </div>
+                    </div>
+                    <p class="hder">WorkCare / TAC / Workers Comp.</p>
+                    <div class="" name="workCareTacWorker">
+                        <div class="l1">
+                            <p>
+                                Approval must be obtained prior to admission.<br />
+                                Correspondence verifying liability must be presented on
+                                admission
+                            </p>
+                        </div>
+                        <div class="l1">
+                            <label for="dateAccident">Date of Injury / Accident:</label>
+                            <input type="date" name="dateAccident" />
+                        </div>
+                        <div class="l1">
+                            <label for="phoneNoWork">Phone No:</label>
+                            <input type="text" name="phoneNoWork" />
+                        </div>
+                        <div class="l1">
+                            <label for="insuranceCompany">Insurance Company:</label>
+                            <input type="text" name="insuranceCompany" />
+                        </div>
+                        <div class="l1">
+                            <label for="claimNo">Claim No:</label>
+                            <input type="number" name="claimNo" />
+                        </div>
+                        <div class="l1">
+                            <label for="solicitor">Your Solicitor:</label>
+                            <input type="text" name="solicitor" />
+                        </div>
+                        <div class="l1">
+                            <label for="addressSolicitor">Address:</label>
+                            <input type="text" name="addressSolicitor" />
+                        </div>
+                        <div class="l1">
+                            <label for="phoneNoSolicitor">Phone No:</label>
+                            <input type="text" name="phoneNoSolicitor" />
+                        </div>
+                        <div class="l1">
+                            <p>
+                                If WorkCare / Workers Comp.
+                            </p>
+                        </div>
+
+                        <div class="l1">
+                            <label for="employer">Employer:</label>
+                            <input type="text" name="employer" /><br />
+                            <label for="addressEmployer">Address:</label>
+                            <input type="text" name="addressEmployer" />
+                            <br /><br /><br />
+                        </div>
+                    </div>
+
+                    <div class="l1">
+                        <strong>Private Insurance</strong><br />
+                        <p>
+                            If you elect to be a private patient, the Hospital will claim<br />
+                            bed fees on your behalf. Please bring your membership<br />
+                            book at time of admission.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="">
+                    <input type="submit" name="submit-button" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="ft">
+            <p>
+                The information you provide on this form does not oblige you to elect whether you are treated as a public or private patient until you are admitted.<br />
+                <strong>Contact your Health Fund if you have any queries about your coverage AND please read the notes on the back of this form.</strong>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

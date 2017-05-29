@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {           
+            var firstChild = document.querySelector("p");            
+          //  alert(firstChild.innerHTML);         
+            var lastChild = document.querySelector("p:last-child");
+          //  alert(lastChild.innerHTML);
+            var x3 = document.querySelector("section");
+            var secondchild = x3.getElementsByTagName('p')[1];            
+          //  alert(secondchild.innerHTML);
+            x3.appendChild(firstChild);
+            x3.insertBefore(secondchild, firstChild);
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

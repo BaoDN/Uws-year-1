@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+             xmlhttp = new XMLHttpRequest();
+             xmlhttp.open("GET", "http://tmaserv.scem.uws.edu.au/htmlfrag.html", true);
+             xmlhttp.onreadystatechange = function () {
+                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                     var result, firstChild, section, p;
+                      result = xmlhttp.responseText;
+                      firstChild = document.querySelector("p");
+                      section = document.querySelector("section");
+                   
+                     p = document.createElement("p");
+                     p.innerHTML = result;                    
+                     section.insertBefore(p, firstChild);
+                 }
+             }
+             xmlhttp.send();
+        }
+    </script>
+</head>
+<body>  
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starting Point</title>
+    <script>
+        function do_exercise() {
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "http://tmaserv.scem.uws.edu.au/fruit.json", true);
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var i, section, h, p, result, result1, name, description;
+                    result = xmlhttp.responseText;
+                    result1 = JSON.parse(result);
+
+                    for (i = 0 ; i < result1.length ; i++) {
+
+                        section = document.querySelector("section");
+
+                        h = document.createElement("h1");
+                        name = document.createTextNode(" Name: " + result1[i].name);
+
+                        p = document.createElement("p");
+                        description = document.createTextNode("Description: " + result1[i].description);
+
+                        h.appendChild(name);
+                        p.appendChild(description);
+                        section.appendChild(h);
+                        section.appendChild(p);
+                    }
+                }
+            }
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="do_exercise();">Click Me</button>
+    </nav>
+    <section>
+        <p>Paragraph One.</p>
+        <p>Paragraph Two.</p>
+        <p>Paragraph Three.</p>
+    </section>
+</body>
+</html>
